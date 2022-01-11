@@ -1,0 +1,210 @@
+.mainContainer {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.15)), url("../images/shubham-dhage-fQL1DKNUQZw-unsplash.jpg");
+    /*background: url("../images/shubham-dhage-fQL1DKNUQZw-unsplash.jpg");*/
+    /*background: var(--main-light);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pointer {
+    height: 40px;
+    width: 40px;
+    background: ivory;
+    /*margin: 0 auto;*/
+    transform: rotate(45deg);
+    margin-top: -35px;
+    background: green;
+    position: relative;
+    visibility: hidden;
+    height: 0;
+    transition: height 0.2s ease;
+}
+
+.pointer.active {
+    visibility: visible;
+    height: 40px;
+}
+
+.copied-alert {
+    background: green;
+    padding: 10px;
+    z-index: 1;
+    visibility: hidden;
+    height: 0;
+    /*transition: height 0.2s ease;*/
+}
+
+.copied-alert.active {
+    visibility: visible;
+    height: 30px;
+}
+
+.header-heading img {
+    width: 100%;
+    margin: 40px 0;
+}
+/*sawascraft.tk*/
+
+.header-heading button {
+    /*font-family:'Alfa Slab One';*/
+    font-weight: bold;
+    background: #b00000;
+    font-family:'Bebas Neue';
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 4rem;
+    border: 0;
+    margin:0px;
+    letter-spacing: 2px;
+    /*color:#3d2514;*/
+    color:#ffffff;
+}
+
+.header-heading button:hover {
+    cursor: pointer;
+}
+
+.login-register {
+    z-index: 5;
+    position: fixed;
+    margin: 10px;
+    top: 0;
+    right: 0;
+}
+
+/*.mainContainer.lightMode {*/
+/*    background-image: url("../images/bg.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.mainContainer .btn:hover {
+    color: white !important;
+}
+
+/*.mainContainer.lightMode h3 {*/
+/*    color: black;*/
+/*}*/
+
+.mainContainer span {
+    color: var(--green-color);
+}
+
+/*.mainContainer.lightMode h1 {*/
+/*    color: black;*/
+/*}*/
+
+/*.mainContainer.lightMode p {*/
+/*    color: black;*/
+/*}*/
+
+#main{
+    /*background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+    background-repeat: no-repeat;
+    transition: all linear 0.5s;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*display: flex;*/
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    /*height: 1000px;*/
+    /*position: relative;*/
+    background-repeat: no-repeat;
+}
+
+.header-heading{
+    font-family: mcFont;
+    /*width: 100%;*/
+    /*position: relative;*/
+    /*left: 25%;*/
+    /*text-align: left;*/
+    max-width: 900px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.header-heading span{
+    font-family: mcFont;
+    /*color: #bf2222;*/
+    /*border-bottom: 2px solid #3d2514;*/
+    border-bottom: 2px solid #ffffff;
+}
+.header-heading .details{
+    font-size: 23px;
+    /*color: #181818;*/
+    color: #ffffff;
+}
+.header-heading h3{
+    font-family:'Bebas Neue';
+    font-size: 1.6rem;
+    margin:0px;
+    margin-bottom: 20px;
+    /*color:#3d2514;*/
+    color:#ffffff;
+}
+.header-heading h1{
+    /*font-family:'Alfa Slab One';*/
+    background: #b00000;
+    font-family:'Bebas Neue';
+    padding: 0 30px;
+    font-size: 4rem;
+    margin:0px;
+    letter-spacing: 2px;
+    /*color:#3d2514;*/
+    color:#ffffff;
+}
+.header-btns{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 40px;
+}
+.btn {
+    padding: 0 10px 0 10px;
+    height: 50px;
+    display: flex;
+    text-decoration: none !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family:'Lato';
+    text-decoration: none;
+    background-color: var(--green-color);
+    box-shadow: 5px 10px 30px rgba(48, 255, 2, 0.33);
+    border-radius: 5px;
+    color:#ffffff;
+    border: 2px solid var(--green-color);
+}
+.btn:hover {
+    background-color: transparent;
+    transition: all ease 0.5s;
+    color: white;
+}
+
+.mainContainer.lightMode .btn:hover {
+    color: var(--bg-primary);
+}
+
+.header-btn:hover{
+    background-color: transparent;
+    transition: all ease 0.5s;
+    color: #3d2514;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-heading h1{
+        font-size: 3rem;
+    }
+    .header-heading button {
+        width: 100%;
+        padding: 0;
+    }
+}

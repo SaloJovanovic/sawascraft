@@ -1,0 +1,60 @@
+.update-container {
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    margin: 10px 20px 20px 20px;
+}
+
+.update-container h3, p {
+    color: white;
+    font-family: "Lato";
+    margin: 10px 20px;
+}
+
+.update-container.lightMode .update-description p {
+    color: black !important;
+}
+
+.update-container.lightMode h3 {
+    color: black !important;
+}
+
+.update-header {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background: var(--text-third);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-container.lightMode .update-header {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-header p {
+    color: gray !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .update-container {
+        /*width: 90%;*/
+    }
+}
