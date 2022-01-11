@@ -4,6 +4,7 @@ import {BrowserRouter, Link, Router, Route, Routes} from 'react-router-dom';
 import Navbar from "./Navbar/Navbar";
 import Main from "./Main/Main";
 import Updates from "./Updates/Updates";
+import Shop from "./Shop/Shop";
 
 function App() {
 
@@ -12,17 +13,35 @@ function App() {
   return (
     <BrowserRouter>
       <div className={'Body'}>
-        <Navbar navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
         <Routes>
           <Route path={'/'} element={
-            <div className={'Main'}>
-              <Main navbarLightMode={navbarLightMode}></Main>
-            </div>}>
+            <>
+              <Navbar isHomePage={true} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
+              <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
+                <Main navbarLightMode={navbarLightMode}></Main>
+                asdf<br/>
+                asdf<br/>
+                asdf<br/>
+                asdf<br/>
+                asdf<br/>
+              </div>
+            </>}>
           </Route>
           <Route path={'/updates'} element={
-            <div className={'Main'}>
-              <Updates navbarLightMode={navbarLightMode}></Updates>
-            </div>}>
+            <>
+              <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
+              <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
+                <Updates navbarLightMode={navbarLightMode}></Updates>
+              </div>
+            </>}>
+          </Route>
+          <Route path={'/shop'} element={
+            <>
+              <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
+              <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
+                <Shop navbarLightMode={navbarLightMode}></Shop>
+              </div>
+            </>}>
           </Route>
         </Routes>
       </div>

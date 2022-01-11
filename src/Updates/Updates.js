@@ -16,7 +16,8 @@ const Updates = ({navbarLightMode}) => {
 
   const[updates, setUpdates] = useState([
     new update("First update", new Date(2021, 12, 27), "This is our first update.", [img1]),
-    new update("Second update", new Date(2021, 12, 27), "This is our second update.", [img1, img2])
+    new update("Second update", new Date(2021, 12, 27), "This is our second update.", [img1, img2]),
+    new update("Second update", new Date(2021, 12, 27), "This is our second update.", [img1, img2]),
   ]);
 
   return (

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @font-face {
     font-family: mcFont;
     src: url('./fonts/MINECRAFTER.REG.TTF');
@@ -39,9 +40,15 @@
 
 .Main {
     margin-left: 5rem;
+    background: var(--bg-main);
     /*padding: 1rem;*/
+    min-height: 100vh;
+    transition: all ease 0.2s;
 }
 
+.Main.lightMode {
+    background: white !important;
+}
 
 @media only screen and (max-width: 600px) {
     .Main {

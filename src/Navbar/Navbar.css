@@ -158,14 +158,18 @@
         height: 5rem;
         transition: all linear 0.2s;
     }
+    .navbar .menu-icon .nav-link {
+        color: white;
+        filter: none;
+    }
     .navbar.lightMode .responsive-menu .menu-icon .nav-link {
         color: var(--bg-primary) !important;
     }
     .navbar.active {
         box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
-        background-color: var(--bg-primary)
+        background-color: var(--bg-primary);
     }
-    .menu-icon .nav-link {
+    .navbar.lightMode .menu-icon .nav-link {
         filter: none !important;
         color: white !important;
     }
@@ -177,6 +181,13 @@
         color: var(--bg-main) !important;
     }
     .navbar.active.lightMode .menu-logo .nav-link {
+        color: var(--bg-main) !important;
+    }
+    .navbar.lightMode .navbar-nav.not-home-page .menu-icon .nav-link {
+        color: var(--bg-main) !important;
+    }
+
+    .navbar.lightMode .navbar-nav.not-home-page .menu-logo .nav-link {
         color: var(--bg-main) !important;
     }
     .navbar.lightMode {

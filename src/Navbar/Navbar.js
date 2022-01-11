@@ -8,7 +8,7 @@ import {HiInformationCircle, HiMenuAlt2} from 'react-icons/hi';
 import {MdUpdate, MdShoppingCart} from 'react-icons/md';
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
 
-const Navbar = ({navbarLightMode, setNavbarLightMode}) => {
+const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
 
   const changeColorMode = () => {
     if (!navbarLightMode)
@@ -60,7 +60,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode}) => {
     <div className={navbarLightMode && nav ? 'navbar lightMode active' :
                     navbarLightMode ? 'navbar lightMode' :
                     nav ? 'navbar active' : 'navbar'}>
-      <ul className={'navbar-nav'}>
+      <ul className={isHomePage ? 'navbar-nav' : 'navbar-nav not-home-page'}>
         <li className={'logo'}>
           <Link className={'nav-link'} to={'/'}>
             <span className={'link-text'}>SAWASCRAFT</span>
@@ -90,7 +90,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode}) => {
         </li>
 
         <li className={'nav-item'}>
-          <Link className={'nav-link'} to={'/'}>
+          <Link className={'nav-link'} to={'/shop'}>
             <MdShoppingCart className={'icon'}></MdShoppingCart>
             <span className={'link-text'}>SHOP</span>
           </Link>
@@ -137,7 +137,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode}) => {
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/'}>
+            <Link className={'nav-link'} to={'/shop'}>
               <MdShoppingCart className={'icon'}></MdShoppingCart>
               <span className={'link-text'}>SHOP</span>
             </Link>

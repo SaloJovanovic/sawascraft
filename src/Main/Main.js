@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './Main.css';
 import {Link} from 'react-router-dom';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import sawascraftLogo from '../images/sawacraft-logo-2.png';
 
 const Main = ({navbarLightMode}) => {
@@ -11,10 +12,10 @@ const Main = ({navbarLightMode}) => {
     return new Promise(resolve => setTimeout(resolve, time));
   }
 
-  function myFunction() {
-    var copyText = document.getElementById("myInput");
-
-    navigator.clipboard.writeText(copyText.innerText);
+  const myFunction = () => {
+    // var copyText = document.getElementById("myInput");
+    //
+    // navigator.clipboard.writeText(copyText.innerText);
 
     if (copiedText)
       setCopiedText(false);
@@ -38,7 +39,9 @@ const Main = ({navbarLightMode}) => {
         </div>
 
 
-        <button id={'myInput'} onClick={myFunction} >sawascraft.tk</button>
+        <CopyToClipboard text={"sawascraft.tk"}>
+          <button id={'myInput'} onClick={myFunction} >sawascraft.tk</button>
+        </CopyToClipboard>
         {/*<div className={'header-btns'}>*/}
         {/*  <Link to={'/events'} smooth={true} duration={500} className={'btn'}>Događaji</Link>*/}
         {/*</div>*/}

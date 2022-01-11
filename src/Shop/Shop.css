@@ -1,7 +1,6 @@
-.updates-container {
+.shop-container {
     padding: 100px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     background: var(--bg-main);
     justify-content: center;
@@ -9,6 +8,6 @@
     transition: all ease 0.2s;
 }
 
-.updates-container.lightMode {
+.shop-container.lightMode {
     background: white !important;
 }

@@ -1,62 +1,63 @@
-.update-container {
+.shop-item-container {
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
-    width: 90%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     margin: 15px;
+    text-align: center;
 }
 
-.update-container img {
+.shop-item-container img {
+    height: 50%;
     width: 100%;
-    margin-top: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 
-.update-container .img-container {
-    display: flex;
-    flex-wrap: wrap;
+.shop-item-container .img-container {
+    display: block;
+    align-items: center;
+    height: 150px;
     margin: 10px 20px 20px 20px;
 }
 
-.update-container h3, p {
+.shop-item-container h3, p {
     color: white;
     font-family: "Lato";
     margin: 10px 20px;
 }
 
-.update-container.lightMode .update-description p {
+.shop-item-container.lightMode .shop-item-description p {
     color: black !important;
 }
 
-.update-container.lightMode h3 {
+.shop-item-container.lightMode h3 {
     color: black !important;
 }
 
-.update-header {
+.shop-item-header {
     border-radius: 20px 20px 0 0;
     width: 100%;
     background: var(--text-third);
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     align-items: center;
 }
 
-.update-container.lightMode .update-header {
+.shop-item-container.lightMode .shop-item-header {
     border-radius: 20px 20px 0 0;
     width: 100%;
     background: var(--text-secondary);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.update-header p {
+.shop-item-header p {
     color: gray !important;
 }
 
 @media only screen and (max-width: 600px) {
-    .update-container {
+    .shop-item-container {
         /*width: 90%;*/
     }
 }
