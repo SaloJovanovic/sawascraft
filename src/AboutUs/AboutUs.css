@@ -13,6 +13,12 @@
     background: white !important;
 }
 
+.possible {
+    margin-top: 70px;
+    margin-bottom: -30px;
+    z-index: 2;
+}
+
 .about-us-big-container p {
     text-align: center;
 }

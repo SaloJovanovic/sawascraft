@@ -33,8 +33,8 @@ const AboutUs = ({navbarLightMode}) => {
       <h1>About Us</h1>
       <p>We are a group of people who decided to connect people by creating a Minecraft server, which will be free for all those who have Minecraft installed.
       </p>
+      <h1 className={'possible'}>The people who made this possible</h1>
       <div className={navbarLightMode ? 'nations-container lightMode' : 'nations-container'}>
-        <h1>The people who made this possible</h1>
         {workes.map((worker) => (
           <>
             <Worker navbarLightMode={navbarLightMode} worker={worker}></Worker>
