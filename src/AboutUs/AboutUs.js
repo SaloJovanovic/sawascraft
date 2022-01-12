@@ -4,35 +4,44 @@ import savapfp from '../images/pfps/sava.png';
 import mattispfp from '../images/pfps/mattis.png';
 import salepfp from '../images/pfps/sale.png';
 import alexpfp from '../images/pfps/alex.png';
-import majorpfp from '../images/pfps/major.jpg';
+import majorpfp from '../images/pfps/default.jpg';
+import Worker from "../Worker/Worker";
 
 const AboutUs = ({navbarLightMode}) => {
   class worker {
     constructor(name, pfp, job, description, link) {
-      this.title = name;
+      this.name = name;
       this.pfp = pfp;
-      this.jov = job;
+      this.job = job;
       this.description = description;
       this.link = link;
     }
   }
 
-  const[wokrers, setWorkers] = useState([
-    new worker("Sava", savapfp, "CEO", "", 'https://www.instagram.com/sawabozovic/'),
-    new worker("Mattis", mattispfp, "Organization and community menagment", "", 'https://www.instagram.com/mattis_1243/'),
-    new worker("Sale", salepfp, "Web developer", "", 'https://www.instagram.com/mattis_1243/'),
+  const[workes, setWorkers] = useState([
+    new worker("Sava", savapfp, "CEO", "", '//www.instagram.com/sawabozovic/'),
+    new worker("Mattis", mattispfp, "Organization and community menagment", "", '//www.instagram.com/mattis_1243/'),
+    new worker("Sale", salepfp, "Web developer", "", '//www.instagram.com/notkomunjara/'),
+    new worker("Alex", alexpfp, "Developer", "", '//www.instagram.com/simquixx/'),
+    new worker("Major", majorpfp, "Saint Major", "", '//www.instagram.com/major.flv/'),
   ])
 
+  console.log(workes);
+
   return (
-    <>
+    <div className={navbarLightMode ? 'about-us-big-container lightMode' : 'about-us-big-container'}>
+      <h1>About Us</h1>
+      <p>We are a group of people who decided to connect people by creating a Minecraft server, which will be free for all those who have Minecraft installed.
+      </p>
       <div className={navbarLightMode ? 'nations-container lightMode' : 'nations-container'}>
-        {nations.map((nation) => (
+        <h1>The people who made this possible</h1>
+        {workes.map((worker) => (
           <>
-            <Nation navbarLightMode={navbarLightMode} nation={nation}></Nation>
+            <Worker navbarLightMode={navbarLightMode} worker={worker}></Worker>
           </>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 

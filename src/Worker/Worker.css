@@ -1,0 +1,87 @@
+.worker-container {
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: height 0.2s ease;
+    height: auto;
+}
+
+.worker-container a {
+    font-family: "Lato";
+    color: var(--sawascraft-color);
+    text-decoration: none;
+}
+
+.worker-description {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+p span {
+    color: var(--text-primary);
+    font-family: "Lato";
+}
+
+
+.worker-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.worker-container .img-container {
+    display: block;
+    align-items: center;
+}
+
+.worker-container h3, p {
+    color: var(--text-primary);
+    font-family: "Lato";
+    margin: 10px 20px;
+}
+
+.worker-container.lightMode .worker-description p {
+    /*color: var(--bg-main);*/
+    color: var(--text-fourth) !important;
+}
+
+.worker-container.lightMode h3 {
+    color: black !important;
+}
+
+
+.worker-description .job {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.worker-header {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background: var(--text-third);
+    text-align: center;
+    align-items: center;
+}
+
+.worker-container.lightMode .worker-header {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background: var(--text-secondary);
+    align-items: center;
+}
+
+.worker-header p {
+    color: gray !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .worker-container {
+        /*width: 90%;*/
+    }
+}

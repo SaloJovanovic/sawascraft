@@ -1,0 +1,32 @@
+.about-us-big-container{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-main);
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all ease 0.2s;
+}
+
+.about-us-big-container.lightMode {
+    background: white !important;
+}
+
+.about-us-big-container p {
+    text-align: center;
+}
+
+.about-us-big-container h1 {
+    text-align: center;
+    font-family: "Lato";
+    color: white;
+}
+
+.about-us-big-container.lightMode p {
+    color: var(--text-fourth);
+}
+
+.about-us-big-container.lightMode h1 {
+    color: var(--bg-primary);
+}

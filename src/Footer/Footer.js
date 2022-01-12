@@ -42,7 +42,7 @@ const Footer = ({navbarLightMode}) => {
       <div data-aos={"fade-up"} className={'support footer-element'}>
         {/*<h3>Podrška</h3>*/}
         <Link to={'/contact'} className={'link'}>Contact</Link>
-        <Link to={'/faq'} className={'link'}>FAQ</Link>
+        {/*<Link to={'/faq'} className={'link'}>FAQ</Link>*/}
       </div>
     </div>
   )

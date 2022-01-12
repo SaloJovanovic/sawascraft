@@ -84,13 +84,6 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
         </li>
 
         <li className={'nav-item'}>
-          <Link className={'nav-link'} to={'/'}>
-            <FaBookOpen className={'icon'}></FaBookOpen>
-            <span className={'link-text'}>LORE</span>
-          </Link>
-        </li>
-
-        <li className={'nav-item'}>
           <Link className={'nav-link'} to={'/shop'}>
             <MdShoppingCart className={'icon'}></MdShoppingCart>
             <span className={'link-text'}>SHOP</span>
@@ -105,7 +98,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
         </li>
 
         <li className={'nav-item'}>
-          <Link className={'nav-link'} to={'/'}>
+          <Link className={'nav-link'} to={'/about-us'}>
             <HiInformationCircle className={'icon'}></HiInformationCircle>
             <span className={'link-text'}>ABOUT US</span>
           </Link>
@@ -126,15 +119,9 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/updates'}>
-              <MdUpdate className={'icon'}></MdUpdate>
-              <span className={'link-text'}>UPDATES</span>
-            </Link>
-          </li>
-          <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/'}>
-              <FaBookOpen className={'icon'}></FaBookOpen>
-              <span className={'link-text'}>LORE</span>
+            <Link className={'nav-link'} to={'/news'}>
+              <BiNews className={'icon'}></BiNews>
+              <span className={'link-text'}>NEWS</span>
             </Link>
           </li>
           <li className={'nav-item'}>
@@ -150,7 +137,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/'}>
+            <Link className={'nav-link'} to={'/about-us'}>
               <HiInformationCircle className={'icon'}></HiInformationCircle>
               <span className={'link-text'}>ABOUT US</span>
             </Link>

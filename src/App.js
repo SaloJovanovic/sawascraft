@@ -9,6 +9,7 @@ import Nations from "./Nations/Nations";
 import Footer from "./Footer/Footer";
 import Wave from "./Wave/Wave";
 import Contact from "./Contact/Contact";
+import AboutUs from "./AboutUs/AboutUs";
 
 function App() {
 
@@ -55,6 +56,14 @@ function App() {
               <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
               <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
                 <Contact navbarLightMode={navbarLightMode}></Contact>
+              </div>
+            </>}>
+          </Route>
+          <Route path={'/about-us'} element={
+            <>
+              <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
+              <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
+                <AboutUs navbarLightMode={navbarLightMode}></AboutUs>
               </div>
             </>}>
           </Route>

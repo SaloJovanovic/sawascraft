@@ -17,10 +17,10 @@ const Updates = ({navbarLightMode}) => {
 
   const[updates, setUpdates] = useState([
     new update("Trailer launch!", new Date(2022, 1, 12), "", <iframe width="560" height="315"
-                                                                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                                                                 title="YouTube video player" frameBorder="0"
-                                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                                 allowFullScreen></iframe>, []),
+                                                                     src="https://www.youtube.com/embed/5KUZHLP4HRA"
+                                                                     title="YouTube video player" frameBorder="0"
+                                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                     allowFullScreen></iframe>, []),
     // new update("Trailer launch!", new Date(2022, 1, 12), "asiodjfiojasio fioasj fiowuio fiouaworurnguo he uwg uahuog jsh auioshdf uosau hfuwshf uhsui huaiwuifdsn asdiofa", [img1, img2]),
   ]);
 
