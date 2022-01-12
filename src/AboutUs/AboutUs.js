@@ -23,7 +23,7 @@ const AboutUs = ({navbarLightMode}) => {
     new worker("Mattis", mattispfp, "Organization and community menagment", "", '//www.instagram.com/mattis_1243/'),
     new worker("Sale", salepfp, "Web developer", "", '//www.instagram.com/notkomunjara/'),
     new worker("Alex", alexpfp, "Developer", "", '//www.instagram.com/simquixx/'),
-    new worker("Major", majorpfp, "Saint Major", "", '//www.instagram.com/major.flv/'),
+    new worker("Major", majorpfp, "Developer", "", '//www.instagram.com/major.flv/'),
   ])
 
   console.log(workes);
