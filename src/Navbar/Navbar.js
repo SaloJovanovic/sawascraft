@@ -7,6 +7,7 @@ import {AiFillHome, AiOutlineClose} from 'react-icons/ai';
 import {HiInformationCircle, HiMenuAlt2} from 'react-icons/hi';
 import {MdUpdate, MdShoppingCart} from 'react-icons/md';
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs';
+import {BiNews} from 'react-icons/bi';
 
 const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
 
@@ -76,9 +77,9 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
         </li>
 
         <li className={'nav-item'}>
-          <Link className={'nav-link'} to={'/updates'}>
-            <MdUpdate className={'icon'}></MdUpdate>
-            <span className={'link-text'}>UPDATES</span>
+          <Link className={'nav-link'} to={'/news'}>
+            <BiNews className={'icon'}></BiNews>
+            <span className={'link-text'}>NEWS</span>
           </Link>
         </li>
 
@@ -97,7 +98,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
         </li>
 
         <li className={'nav-item'}>
-          <Link className={'nav-link'} to={'/'}>
+          <Link className={'nav-link'} to={'/nations'}>
             <FaFlag className={'icon'}></FaFlag>
             <span className={'link-text'}>NATIONS</span>
           </Link>
@@ -143,7 +144,7 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/'}>
+            <Link className={'nav-link'} to={'/nations'}>
               <FaFlag className={'icon'}></FaFlag>
               <span className={'link-text'}>NATIONS</span>
             </Link>

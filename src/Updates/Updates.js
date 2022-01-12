@@ -6,18 +6,22 @@ import img2 from '../images/steve-johnson-YJGq5H9ofy0-unsplash.jpg';
 
 const Updates = ({navbarLightMode}) => {
   class update {
-    constructor(title, date, description, images) {
+    constructor(title, date, description, embed, images) {
       this.title = title;
       this.date = date;
       this.description = description;
+      this.embed = embed;
       this.images = images;
     }
   }
 
   const[updates, setUpdates] = useState([
-    new update("First update", new Date(2021, 12, 27), "This is our first update.", [img1]),
-    new update("Second update", new Date(2021, 12, 27), "This is our second update.", [img1, img2]),
-    new update("Second update", new Date(2021, 12, 27), "This is our second update.", [img1, img2]),
+    new update("Trailer launch!", new Date(2022, 1, 12), "", <iframe width="560" height="315"
+                                                                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                                                 title="YouTube video player" frameBorder="0"
+                                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                 allowFullScreen></iframe>, []),
+    // new update("Trailer launch!", new Date(2022, 1, 12), "asiodjfiojasio fioasj fiowuio fiouaworurnguo he uwg uahuog jsh auioshdf uosau hfuwshf uhsui huaiwuifdsn asdiofa", [img1, img2]),
   ]);
 
   return (

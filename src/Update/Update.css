@@ -16,7 +16,24 @@
 .update-container .img-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 20px 20px 20px;
+    /*margin: 10px 20px 20px 20px;*/
+}
+
+.img-container img {
+    margin: 5px 20px 20px 20px;
+}
+
+.img-container iframe {
+    margin: 5px 20px 20px 20px;
+}
+
+.embed-container {
+    display: block !important;
+    text-align: center;
+}
+
+.update-description {
+    padding: 10px;
 }
 
 .update-container h3, p {

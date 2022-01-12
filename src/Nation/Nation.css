@@ -1,0 +1,82 @@
+.nation-container {
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: height 0.2s ease;
+    height: auto;
+}
+
+.nation-container a {
+    font-family: "Lato";
+    color: var(--sawascraft-color);
+    text-decoration: none;
+}
+
+.nation-description {
+    margin-bottom: 10px;
+}
+
+p span {
+    color: var(--text-primary);
+    font-family: "Lato";
+}
+
+.leader {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nation-container img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.nation-container .img-container {
+    display: block;
+    align-items: center;
+    margin: 10px 20px 20px 20px;
+}
+
+.nation-container h3, p {
+    color: white;
+    font-family: "Lato";
+    margin: 10px 20px;
+}
+
+.nation-container.lightMode .nation-description p {
+    color: black !important;
+}
+
+.nation-container.lightMode h3 {
+    color: black !important;
+}
+
+.nation-header {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background: var(--text-third);
+    text-align: center;
+    align-items: center;
+}
+
+.nation-container.lightMode .nation-header {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background: var(--text-secondary);
+    align-items: center;
+}
+
+.nation-header p {
+    color: gray !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .nation-container {
+        /*width: 90%;*/
+    }
+}

@@ -31,6 +31,7 @@
     --bg-main: #282828;
     --main-light: #2b7bcb;
     --main-dark: #235d9d;
+    --sawascraft-color: #2b7bcb;
     --transition-speed: 600ms;
 }
 
@@ -42,7 +43,7 @@
     margin-left: 5rem;
     background: var(--bg-main);
     /*padding: 1rem;*/
-    min-height: 100vh;
+    min-height: 70vh;
     transition: all ease 0.2s;
 }
 

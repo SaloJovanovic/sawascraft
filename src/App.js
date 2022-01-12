@@ -5,6 +5,10 @@ import Navbar from "./Navbar/Navbar";
 import Main from "./Main/Main";
 import Updates from "./Updates/Updates";
 import Shop from "./Shop/Shop";
+import Nations from "./Nations/Nations";
+import Footer from "./Footer/Footer";
+import Wave from "./Wave/Wave";
+import Contact from "./Contact/Contact";
 
 function App() {
 
@@ -19,15 +23,10 @@ function App() {
               <Navbar isHomePage={true} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
               <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
                 <Main navbarLightMode={navbarLightMode}></Main>
-                asdf<br/>
-                asdf<br/>
-                asdf<br/>
-                asdf<br/>
-                asdf<br/>
               </div>
             </>}>
           </Route>
-          <Route path={'/updates'} element={
+          <Route path={'/news'} element={
             <>
               <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
               <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
@@ -43,7 +42,24 @@ function App() {
               </div>
             </>}>
           </Route>
+          <Route path={'/nations'} element={
+            <>
+              <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
+              <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
+                <Nations navbarLightMode={navbarLightMode}></Nations>
+              </div>
+            </>}>
+          </Route>
+          <Route path={'/contact'} element={
+            <>
+              <Navbar isHomePage={false} navbarLightMode={navbarLightMode} setNavbarLightMode={setNavbarLightMode}></Navbar>
+              <div className={navbarLightMode ? 'Main lightMode' : 'Main'}>
+                <Contact navbarLightMode={navbarLightMode}></Contact>
+              </div>
+            </>}>
+          </Route>
         </Routes>
+        <Footer navbarLightMode={navbarLightMode}></Footer>
       </div>
     </BrowserRouter>
   );
