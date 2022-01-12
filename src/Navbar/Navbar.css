@@ -136,6 +136,7 @@
     margin-left: -100px;
     height: 100%;
     opacity: 0;
+    z-index: 3 !important;
     width: 0;
     transition: all 0.3s ease;
 }
@@ -250,12 +251,12 @@
         list-style: none;
         position: absolute;
         padding: 0;
-        z-index: 2;
         margin: 0;
         flex-direction: column;
         align-items: center;
         visibility: visible;
         opacity: 1;
+        z-index: 3!important;
         /*width: 15rem;*/
         width: 100%;
     }

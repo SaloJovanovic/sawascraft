@@ -15,8 +15,7 @@
 
 .possible {
     margin-top: 70px;
-    margin-bottom: -30px;
-    z-index: 2;
+    margin-bottom: 35px;
 }
 
 .about-us-big-container p {
@@ -35,4 +34,13 @@
 
 .about-us-big-container.lightMode h1 {
     color: var(--bg-primary);
+}
+
+.about-us-small-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-small-container .nations-container {
+    padding-top: 0;
 }

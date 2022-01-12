@@ -18,6 +18,14 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
       setNavbarLightMode(false);
   }
 
+  const changeColorModeResponsive = () => {
+    if (!navbarLightMode)
+      setNavbarLightMode(true);
+    else
+      setNavbarLightMode(false);
+    openMenu();
+  }
+
   let colorModeSwitcher;
   if (!navbarLightMode) {
     colorModeSwitcher =
@@ -113,37 +121,37 @@ const Navbar = ({navbarLightMode, setNavbarLightMode, isHomePage}) => {
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/'}>
+            <Link onClick={openMenu} className={'nav-link'} to={'/'}>
               <AiFillHome className={'icon'}></AiFillHome>
               <span className={'link-text'}>HOME</span>
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/news'}>
+            <Link onClick={openMenu} className={'nav-link'} to={'/news'}>
               <BiNews className={'icon'}></BiNews>
               <span className={'link-text'}>NEWS</span>
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/shop'}>
+            <Link onClick={openMenu} className={'nav-link'} to={'/shop'}>
               <MdShoppingCart className={'icon'}></MdShoppingCart>
               <span className={'link-text'}>SHOP</span>
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/nations'}>
+            <Link onClick={openMenu} className={'nav-link'} to={'/nations'}>
               <FaFlag className={'icon'}></FaFlag>
               <span className={'link-text'}>NATIONS</span>
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link className={'nav-link'} to={'/about-us'}>
+            <Link onClick={openMenu} className={'nav-link'} to={'/about-us'}>
               <HiInformationCircle className={'icon'}></HiInformationCircle>
               <span className={'link-text'}>ABOUT US</span>
             </Link>
           </li>
           <li className={'nav-item'}>
-            <Link onClick={changeColorMode} className={'nav-link'} to={'#'}>
+            <Link onClick={changeColorModeResponsive} className={'nav-link'} to={'#'}>
               <>
                 {colorModeSwitcher}
               </>
