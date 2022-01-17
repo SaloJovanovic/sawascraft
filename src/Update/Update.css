@@ -73,8 +73,47 @@
     color: gray !important;
 }
 
+.noBrake {
+    display: inline-block;
+}
+
+.update-description {
+    margin: 10px 20px;
+}
+
+.update-description p {
+    margin: 0;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
     .update-container {
         /*width: 90%;*/
     }
+}
+
+.update-description pre {
+    margin: 0;
+}
+.update-container h3, pre {
+    color: white;
+    font-family: "Lato";
+    margin: 10px 20px;
+}
+.worker-container h3, pre {
+    color: var(--text-primary);
+    font-family: "Lato";
+    margin: 10px 20px;
+}
+.nation-container h3, pre {
+    color: white;
+    font-family: "Lato";
+    margin: 10px 20px;
+}
+
+.update-container.lightMode .update-description pre {
+    color: black !important;
 }

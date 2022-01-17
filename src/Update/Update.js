@@ -29,7 +29,7 @@ const Update = ({navbarLightMode, update}) => {
         <p>{date}</p>
       </div>
       <div className={'update-description'}>
-        <p>{update.description}</p>
+        {update.description}
       </div>
       <div className={'img-container embed-container'}>
         {update.embed}
