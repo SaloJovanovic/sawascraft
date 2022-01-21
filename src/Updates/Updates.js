@@ -29,7 +29,7 @@ const Updates = ({navbarLightMode}) => {
     new update("New military alliance - OMDA", new Date(2022, 1, 21),
       <>
         <p>
-          A new <p className={'noBrake bolded'}>military alliance</p> has been formed. Her name is <p className={'noBrake bolded'}>OMDA</p>.
+          A new <p className={'noBrake bolded'}>military alliance</p> has been formed. Its name is <p className={'noBrake bolded'}>OMDA</p>.
         </p>
         <br/>
         <p>
