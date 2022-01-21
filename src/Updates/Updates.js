@@ -26,9 +26,20 @@ const Updates = ({navbarLightMode}) => {
   }
 
   const[updates, setUpdates] = useState([
+    new update("New military alliance - OMDA", new Date(2022, 1, 21),
+      <>
+        <p>
+          A new <p className={'noBrake bolded'}>military alliance</p> has been formed. Her name is <p className={'noBrake bolded'}>OMDA</p>.
+        </p>
+        <br/>
+        <p>
+          The founder of the alliance is <p className={'noBrake bolded'}>Noram</p>, while the members are <p className={'noBrake bolded'}>Thidralium</p>, <p className={'noBrake bolded'}>Principality of Herbertia</p>, <p className={'noBrake bolded'}>Chizekstan and Regnum Aeternum</p>.
+        </p>
+      </>,
+      null, []),
     new update("Sawascraft rebirth", new Date(2022, 1, 17),
       <>
-        <p className={''}>
+        <p>
           The server was launched on 16.1.2022. around 7pm CET. A maximum of <p className={'noBrake bolded'}>80 people</p> were on the server <p className={'noBrake bolded'}>at the same time</p>, while <p className={'noBrake bolded'}>171 people registered</p> on the server.
         </p>
         <br/>
