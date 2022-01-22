@@ -29,11 +29,11 @@ const Updates = ({navbarLightMode}) => {
     new update("New military alliance - OMDA", new Date(2022, 1, 21),
       <>
         <p>
-          A new <p className={'noBrake bolded'}>military alliance</p> has been formed. Its name is <p className={'noBrake bolded'}>OMDA</p>.
+          A new <p className={'noBrake bolded'}>military alliance</p> has been formed. Its name is <p className={'noBrake bolded'}>OMDA</p> (Omnia military defence alliance).
         </p>
         <br/>
         <p>
-          The founder of the alliance is <p className={'noBrake bolded'}>Noram</p>, while the members are <p className={'noBrake bolded'}>Thidralium</p>, <p className={'noBrake bolded'}>Principality of Herbertia</p>, <p className={'noBrake bolded'}>Chizekstan and Regnum Aeternum</p>.
+          The founder of the alliance is <p className={'noBrake bolded'}>Noram</p>, while the members are <p className={'noBrake bolded'}>Thidralium</p>, <p className={'noBrake bolded'}>Principality of Herbertia</p>, <p className={'noBrake bolded'}>Chizekstan, Regnum Aeternum and Gladia</p>.
         </p>
       </>,
       null, []),
